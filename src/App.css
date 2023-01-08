@@ -1,38 +1,165 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+}
+.app {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.container {
+  max-width: 1300px;
+}
+.card {
+  padding: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  margin-bottom: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form {
+  padding-right: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.button {
+  float: left;
+  margin: 0 5px 0 0;
+  width: 190px;
+  height: 40px;
+  padding: 3px 10px;
+  position: relative;
+  background-color: #f3f3f3;
+  border-radius: 25px;
+}
+
+.btn-single {
+  width: 100px;
+}
+
+.button label,
+.button input {
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 0px;
+  right: 0px;
+}
+
+.button input[type="radio"] {
+  opacity: 0.011;
+  z-index: 100;
+}
+
+.button input[type="radio"]:checked + label {
+  background: rgb(2, 164, 86);
+  border-radius: 4px;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.button label {
+  cursor: pointer;
+  z-index: 90;
+  line-height: 1.8em;
+}
+
+.btn-submit {
+  background-color: #dcdbdb;
+  color: black;
+  padding: 8px 40px;
+  border: none;
+  border-radius: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.form-steps {
+  margin-bottom: 30px;
+}
+.step-top {
+  background: green;
+  padding: 10px 15px;
+  border-radius: 50%;
+  margin-right: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-step a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-steps a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-step-back {
+  background: green;
+  padding: 10px 15px;
+  border-radius: 30px;
+  margin-right: 10px;
+  cursor: pointer;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-step-back a {
+  color: white;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.children-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.children-input .form-group {
+  width: 100%;
+}
+
+.children-input .children-name-ip {
+  margin-right: 25px;
+}
+.error {
+  color: red;
+}
+
+.detail {
+  background-image: url(img.png);
+  background-color: #f9f9fb;
+  background-repeat: no-repeat;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0px 5px 5px 0px;
+}
+
+.horizontal-line {
+  margin-bottom: 30px;
+}
+
+.form-group .required:after {
+  content: "*";
+  color: red;
+}
+
+label {
+  font-weight: 600;
+}
+.counter {
+  padding-top: 30px;
+}
+
+.counter button {
+  padding: 0px 20px;
+  border-radius: 30px;
+  border: none;
+  font-size: 25px;
+}
+
+.counter span {
+  border: 1px solid #e7e7e7;
+  padding: 5px 20px;
+  margin: 0px 10px;
+  border-radius: 5px;
+  font-size: 20px;
 }
